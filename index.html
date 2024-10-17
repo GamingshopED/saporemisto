@@ -1,63 +1,48 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigli Kebab - Pizza - Bar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sapore Misto Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/username-juaj/username-juaj.github.io/main/images/logo.png" alt="Logo" class="logo-img">
-        </div>
+        <h1>Sapore Misto</h1>
         <nav>
-            <a href="#" class="active">Food</a>
-            <a href="#">Drinks</a>
-            <div class="language-selector">
-                <button class="lang-btn">🇦🇱</button>
-                <button class="lang-btn">🇬🇧</button>
-            </div>
+            <ul>
+                <li><a href="#kebab">Kebab</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="menu-section">
-            <h1>Menus</h1>
-            
-            <!-- Menu Categories -->
-            <div class="menu-categories">
-                <div class="menu-card">Sandwich</div>
-                <div class="menu-card">Piadina</div>
-                <div class="menu-card">Box</div>
-                <div class="menu-card">Dishes</div>
-                <div class="menu-card">Pizza</div>
-            </div>
+    <section id="menu">
+        <div class="menu-item" id="kebab">
+            <h2>Kebab</h2>
+            <img src="kebab.jpeg" alt="Kebab Image">
+            <p>A delicious kebab with fresh ingredients.</p>
+            <span>€5.00</span>
+        </div>
 
-            <!-- Menu Items -->
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="menu-details">
-                        <span class="item-name">Kebab sandwich menu</span>
-                        <span class="price">9.00 €</span>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-details">
-                        <span class="item-name">Kebab piadina menu</span>
-                        <span class="price">9.00 €</span>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-details">
-                        <span class="item-name">Kebab box menu</span>
-                        <span class="price">8.00 €</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        <div class="menu-item" id="pizza">
+            <h2>Pizza</h2>
+            <img src="pizza.jpeg" alt="Pizza Image">
+            <p>Classic Italian pizza with a crispy crust.</p>
+            <span>€7.00</span>
+        </div>
+
+        <div class="menu-item" id="drinks">
+            <h2>Drinks</h2>
+            <img src="drinks.jpeg" alt="Drinks Image">
+            <p>Refreshing beverages to complement your meal.</p>
+            <span>€2.00</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sapore Misto</p>
+    </footer>
 </body>
 </html>
